@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My WhatsApp Store</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <h1>My Store</h1>
+  <ul>
+    {% for product in collections.products %}
+      <li>
+        <img src="{{ product.data.image }}" width="150" />
+        <h2>{{ product.data.title }}</h2>
+        <p>{{ product.data.price }}</p>
+        <a href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20{{ product.data.title }}%20(%20Qty:%201%20)">
+          Order via WhatsApp
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</body>
+</html>
