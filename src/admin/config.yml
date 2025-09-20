@@ -2,6 +2,7 @@ backend:
   name: github
   repo: BountyGA/whatsapp-store
   branch: main
+  auth_scope: repo
 
 media_folder: "src/images"
 public_folder: "/images"
