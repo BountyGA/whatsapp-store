@@ -1,5 +1,5 @@
 backend:
-  name: git-gateway
+  name: github
   repo: BountyGA/whatsapp-store
   branch: main
 
